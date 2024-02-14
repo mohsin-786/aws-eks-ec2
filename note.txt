@@ -1,0 +1,28 @@
+1. Create VPC
+
+2. Create 2 public and 2 private subnets along with load balancer annotations.
+
+3. Attach Internet Gateway to VPC
+
+4. Create Route tables for both public and private subnets.
+   With public subnets route to the Internet Gateway and Private Subnets
+   route to the NAT gateway.
+
+5. Create NAT Gateway
+
+6. Create IAM role with eksCLusterPolicy. 
+   (AmazonEKSClusterPolicy is an AWS managed policy that provides Kubernetes the permissions it requires to 
+   manage resources on your behalf.)
+
+7. Create an EKS cluster
+
+8. Create IAM role with Fargate Pod Execution Role.
+   (Provides access to other AWS service resources that are required to run Amazon EKS pods on AWS Fargate).
+
+9. Create a Fargate profile.
+
+10. Create a data source for tls_certificate to be used with oidc provider
+
+11. Create an open id provider resource
+
+12. Create a Service account for AWS load balancer controller addon.
