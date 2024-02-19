@@ -7,6 +7,8 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2
 
 # sudo chmod +x /usr/local/bin/argocd
 
+sleep 60s
+
 kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
 
 sleep 120s
