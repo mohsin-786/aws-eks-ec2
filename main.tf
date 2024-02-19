@@ -25,7 +25,7 @@ provider "helm" {
 }
 
 module "eks_fargate" {
-  source        = "./modules/eks_fargate"
+  source        = "./modules/eks_cluster"
   cluster_name  = "sins-cluster"
   az1           = "us-east-1a"
   az2           = "us-east-1b"
